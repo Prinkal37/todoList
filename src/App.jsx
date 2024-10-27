@@ -81,7 +81,7 @@ function App() {
         <div className="todoInnerContainer">
           {
             tasks.map((task,index)=>(
-              <TodoEnv index={index} title={task.title} description={task.description} completed={task.completed} deleteTodo={deleteTask} markAsDone={markAsDone} />
+              <TodoEnv todo={task} index={index} deleteTodo={deleteTask} markAsDone={markAsDone} />
             ))
           }
 

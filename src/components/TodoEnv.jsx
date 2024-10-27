@@ -2,12 +2,12 @@ import './todo.css'
 import { IoCheckmarkDoneSharp } from "react-icons/io5";
 import { RiDeleteBin6Fill } from "react-icons/ri";
 
-const TodoEnv = ({index,title, description, deleteTodo, markAsDone, completed}) => {
+const TodoEnv = ({todo,index, deleteTodo, markAsDone}) => {
   return (
-    <div className='container2' key={index} style={{color: completed ? 'grey' : 'black', borderColor: completed ? 'grey' : 'black'}}>
+    <div className='container2' key={index} style={{color: todo.completed ? 'grey' : 'black', borderColor: todo.completed ? 'grey' : 'black'}}>
       <div className='todos'>
-        <div className="title">{title}</div>
-        <div className="description">{description}</div>
+        <div className="title">{todo.title}</div>
+        <div className="description">{todo.description}</div>
       </div>
       <div className='icons'>
         <IoCheckmarkDoneSharp onClick={()=>markAsDone(index)} />
