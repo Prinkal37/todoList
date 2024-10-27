@@ -41,9 +41,11 @@ function App() {
     };
     
     // adding the new task to the tasks array
-    setTasks(prevTasks => [...prevTasks, newTask]);
-    setTitle('');
-    setDescription('');
+    if(title != '' && description != ''){
+      setTasks(prevTasks => [...prevTasks, newTask]);
+      setTitle('');
+      setDescription('');
+    }
   };
 
   // delete task 
