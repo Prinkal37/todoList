@@ -3,7 +3,7 @@ import "@fontsource/ubuntu";
 import "@fontsource/ubuntu/300.css"; 
 import "@fontsource/ubuntu/500.css"; 
 import { SiTodoist } from "react-icons/si";
-import TodoEnv from './components/todoEnv';
+import TodoEnv from './components/TodoEnv';
 import { useEffect, useState } from 'react';
 
 function App() {
