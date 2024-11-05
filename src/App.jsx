@@ -9,7 +9,7 @@ import { useEffect, useState } from 'react';
 function App() {
   const [tasks, setTasks] = useState([
     {
-      title: 'Your title',
+      title: 'title',
       description: 'Your description',
       completed: false
     }
